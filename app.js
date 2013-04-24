@@ -1,7 +1,7 @@
 var express = require('express');
 var app = module.exports = express.createServer();
 app.everyauth = require('everyauth');
-app.everyauth.helpExpress(app);
+
 app.mongoose = require('mongoose');
 
 var config = require('./config.js')(app, express);
