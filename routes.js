@@ -35,7 +35,7 @@ module.exports = function(app, models){
           var zoom = req.params["id"].length + 2;
 
           // now we use the templating capabilities of express and call our template to render the view, and pass a few parameters to it
-          res.render("index.jade", { 
+          res.render("location.jade", { 
             locals: {
               lat:lat,
               lon:lon,
